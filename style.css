@@ -11,6 +11,7 @@
 :root {
     --Gray-800: #1E293B;
     --Gray-600: #475569;
+    --Purple: #7C3AED;
 }
 
 /* numero = 20  (variavel) */
@@ -35,6 +36,7 @@ main {
 .descricao{
     margin-bottom: 2.5rem;
 }
+
 .descricao h1{
     color: var(--Gray-800);
     margin-bottom: 1rem;
@@ -44,4 +46,32 @@ main {
 .descricao p{
     font-size: 0.8125rem;
     color: var(--Gray-600)
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login label {
+    font-size: 0.875rem;
+    color: var(--Gray-800);
+    font-weight: 600;
+}
+
+.login a {
+    color: var(--Purple);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.login a:hover{
+    text-decoration: underline;
 }
