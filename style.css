@@ -15,6 +15,7 @@
     --Gray-200: #E2E8F0;
     --Purple: #7C3AED;
     --white: #fff;
+    --lightPurple: #9F67FF;
 }
 
 /* numero = 20  (variavel) */
@@ -112,6 +113,12 @@ main {
     color: var(--white);
 }
 
+.login button:hover{
+    background: var(--lightPurple);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .login > p {
     color: var(--Gray-600);
 }
@@ -149,10 +156,22 @@ main {
 
     .conteudo{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .bg-desktop {
         display: block;
         width: 100%;
     }
+
+    .descricao h1 {
+        font-size: 2.25rem;
+    }
+
+    .descricao p {
+        font-size: 1rem;
+    }
+
 }
